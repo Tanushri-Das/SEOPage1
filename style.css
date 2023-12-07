@@ -1,0 +1,81 @@
+.scrollable-container {
+  width: 100%; /* Initially take full width */
+  white-space: nowrap;
+  overflow-x: scroll; /* Hide horizontal overflow initially */
+  transition: width 0.5s ease; /* Add smooth transition for width changes */
+}
+
+.scrollable-content {
+  display: inline-block;
+}
+
+/* Style for Webkit browsers (Chrome, Safari) */
+.scrollable-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: blue; /* Green Thumb color */
+  border-radius: 6px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background-color: #ddd; /* Track color */
+}
+
+.col-lg-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.child {
+  height: 100vh; /* Set a fixed height for the parent column */
+  overflow-y: scroll; /* Enable vertical scrolling within the parent column */
+}
+
+/* Style for the scrollbar of .child */
+.child::-webkit-scrollbar {
+  width: 10px;
+}
+
+.child::-webkit-scrollbar-thumb {
+  background-color: blue; /* Red Thumb color */
+  border-radius: 6px;
+}
+
+.child::-webkit-scrollbar-track {
+  background-color: #ddd; /* Track color */
+}
+
+.scrollable-cards {
+  white-space: normal; /* Allow cards to wrap to the next line */
+}
+
+.card {
+  width: 100%; /* Set full width for each card */
+  display: block; /* Display cards as block-level elements */
+  margin-bottom: 10px; /* Add margin between cards */
+}
+
+.parent {
+  background-color: #d1d0ce;
+  margin: 0 10px;
+}
+.custom-circle-image {
+  border-radius: 50%;
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+}
+.bag {
+  background-color: #cccdc6;
+  border-radius: 15%;
+  padding: 5px 10px;
+  height: 40px;
+}
+.bag-icon {
+  padding-top: 6px;
+}
+.zero{
+  margin-top: -7px;
+  margin-left: 10px;
+}

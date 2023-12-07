@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Job Task</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="scrollable-container">
+        <div class="scrollable-content row">
+          <div class="col-lg-3 parent">
+            <h5>Incomplete</h5>
+            <div class="child">
+              <!-- Add a container for the scrollable cards -->
+              <div class="scrollable-cards">
+                <!-- card1 -->
+                <div class="card" data-card-index="0">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_0">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_0"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_0" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card2 -->
+                <div class="card mt-2" data-card-index="1">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_1">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_1"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="1"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_1" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card3 -->
+                <div class="card mt-2" data-card-index="2">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_2">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_2"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="2"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_2" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card4 -->
+                <div class="card mt-2" data-card-index="3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_2">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_3"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="3"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_3" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card5 -->
+                <div class="card mt-2" data-card-index="4">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_2">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_4"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="4"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_4" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card6 -->
+                <div class="card mt-2" data-card-index="5">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_5">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_5"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="5"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_5" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card7 -->
+                <div class="card mt-2" data-card-index="6">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_6">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_6"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="6"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_6" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 parent">
+            <h5>To Do</h5>
+            <div class="child">
+              <!-- Add a container for the scrollable cards -->
+              <div class="scrollable-cards">
+                <!-- card8 -->
+                <div class="card" data-card-index="8">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_8">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_8"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_8" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card2 -->
+                <div class="card mt-2" data-card-index="9">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_9">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_9"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="9"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_9" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card3 -->
+                <div class="card mt-2" data-card-index="10">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_10">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_10"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="10"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_10" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card4 -->
+                <div class="card mt-2" data-card-index="11">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_11">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_11"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="11"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_11" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card5 -->
+                <div class="card mt-2" data-card-index="12">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_12">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_12"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="12"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_12" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card6 -->
+                <div class="card mt-2" data-card-index="13">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_13">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_13"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="13"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_13" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card7 -->
+                <div class="card mt-2" data-card-index="14">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_14">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_14"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="14"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_14" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 parent">
+            <h5>Doing</h5>
+            <div class="child">
+              <!-- Add a container for the scrollable cards -->
+              <div class="scrollable-cards">
+                <!-- card8 -->
+                <div class="card" data-card-index="15">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_15">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_15"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_15" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card2 -->
+                <div class="card mt-2" data-card-index="16">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_16">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_16"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="16"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_16" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card3 -->
+                <div class="card mt-2" data-card-index="17">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_17">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_17"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="17"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_17" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card4 -->
+                <div class="card mt-2" data-card-index="18">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_18">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_18"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="18"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_18" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card5 -->
+                <div class="card mt-2" data-card-index="19">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_19">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_19"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="19"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_19" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card6 -->
+                <div class="card mt-2" data-card-index="20">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_20">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_20"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="20"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_20" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card7 -->
+                <div class="card mt-2" data-card-index="21">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_21">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_21"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="21"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_21" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 parent">
+            <h2>Under Review</h2>
+            <div class="child">
+              <!-- Add a container for the scrollable cards -->
+              <div class="scrollable-cards">
+                <!-- card8 -->
+                <div class="card" data-card-index="22">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_22">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_22"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_22" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card2 -->
+                <div class="card mt-2" data-card-index="23">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_23">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_23"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="23"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_23" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card3 -->
+                <div class="card mt-2" data-card-index="24">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_24">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_24"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="24"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_24" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card4 -->
+                <div class="card mt-2" data-card-index="25">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_25">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_25"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="25"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_25" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card5 -->
+                <div class="card mt-2" data-card-index="26">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_26">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_26"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="26"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_26" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card6 -->
+                <div class="card mt-2" data-card-index="27">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_27">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_27"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="27"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_27" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card7 -->
+                <div class="card mt-2" data-card-index="28">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_28">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_28"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="28"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_28" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 parent">
+            <h2>Completed</h2>
+            <div class="child">
+              <!-- Add a container for the scrollable cards -->
+              <div class="scrollable-cards">
+                <!-- card8 -->
+                <div class="card" data-card-index="29">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_29">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_29"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_29" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card2 -->
+                <div class="card mt-2" data-card-index="30">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_30">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_30"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="30"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+                        <p id="attachmentCount_30" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card3 -->
+                <div class="card mt-2" data-card-index="31">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_31">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_31"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="31"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_31" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card4 -->
+                <div class="card mt-2" data-card-index="32">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_32">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_32"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="32"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_32" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card5 -->
+                <div class="card mt-2" data-card-index="33">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_33">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_33"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="33"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_33" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card6 -->
+                <div class="card mt-2" data-card-index="34">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_34">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_34"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="34"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_34" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card7 -->
+                <div class="card mt-2" data-card-index="35">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Client Name</h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+                          class="card-img-top custom-circle-image"
+                          alt="Avatar"
+                        />
+                        <h6 class="fs-6 ms-1">Sadia Rahman</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex my-3">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur...
+                        </p>
+                      </div>
+                      <div class="d-flex bag">
+                        <i class="fa-solid fa-bag-shopping bag-icon"></i>
+                        <p>1/2</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div id="selectedImagePreviewContainer_35">
+                        <!-- Display the selected image (optional) -->
+                        <img
+                          src="#"
+                          alt="Selected Image"
+                          id="selectedImagePreview_35"
+                          style="
+                            max-width: 100%;
+                            max-height: 200px;
+                            display: none;
+                          "
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="fa-solid fa-paperclip"
+                          data-bs-toggle="modal"
+                          data-bs-target="#attachmentModal"
+                          data-card-index="35"
+                          onclick="handleAttachmentIconClick(this)"
+                        ></i>
+
+                        <p id="attachmentCount_35" class="zero">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="attachmentModal"
+      tabindex="-1"
+      aria-labelledby="attachmentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="attachmentModalLabel">
+              Pick an Attachment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your form or input for picking an attachment goes here -->
+            <input
+              type="file"
+              id="attachmentInput"
+              accept=".pdf, .doc, .docx, .jpg, .jpeg, .png"
+            />
+            <!-- Display the selected image (optional) -->
+            <img
+              src="#"
+              alt="Selected Image"
+              id="selectedImagePreview"
+              style="max-width: 100%; max-height: 200px; display: none"
+            />
+            <div id="selectedImagePreviewContainer">
+              <!-- Display the selected image (optional) -->
+              <img
+                src="#"
+                alt="Selected Image"
+                id="selectedImagePreview"
+                style="max-width: 100%; max-height: 200px; display: none"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="handleAttachmentSelection()"
+            >
+              Attach
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ... (your existing HTML content) ... -->
+
+    <script>
+      var selectedFilesByCard = {};
+      var currentCardIndex;
+
+      function handleAttachmentIconClick(icon) {
+        // Get the card index directly from the clicked icon's parent card element
+        currentCardIndex = icon
+          .closest(".card")
+          .getAttribute("data-card-index");
+        console.log("Paperclip icon clicked for card index:", currentCardIndex);
+
+        // Update the attachmentCountElement to the correct one
+        attachmentCountElement = document.getElementById(
+          "attachmentCount_" + currentCardIndex
+        );
+
+        // Log the cardIndex value here as well
+        console.log("Current cardIndex value:", currentCardIndex);
+
+        // Call the displaySelectedImages function with the currentCardIndex
+        displaySelectedImages(currentCardIndex);
+      }
+
+      document
+        .querySelector(".scrollable-container")
+        .addEventListener("scroll", function () {
+          var container = document.querySelector(".scrollable-container");
+          var scrollPosition = container.scrollLeft;
+
+          if (scrollPosition > container.clientWidth / 2) {
+            container.style.width = "200%";
+          } else {
+            container.style.width = "100%";
+          }
+        });
+
+      function handleAttachmentSelection() {
+        var attachmentInput = document.getElementById("attachmentInput");
+        var selectedFile = attachmentInput.files[0];
+
+        if (selectedFile) {
+          // Check if there is an array for the current card index, if not, create one
+          if (!selectedFilesByCard[currentCardIndex]) {
+            console.log(selectedFilesByCard[currentCardIndex]);
+            selectedFilesByCard[currentCardIndex] = [];
+          }
+
+          // Add the selected file to the array for the current card
+          selectedFilesByCard[currentCardIndex].push(selectedFile);
+
+          // Update the attachment count
+          var attachmentCountElement = document.getElementById(
+            "attachmentCount_" + currentCardIndex
+          );
+          attachmentCountElement.textContent =
+            selectedFilesByCard[currentCardIndex].length;
+
+          // Log the count value to the console
+          console.log(
+            "Attachment Count:",
+            selectedFilesByCard[currentCardIndex].length
+          );
+
+          // Clear the input field
+          attachmentInput.value = "";
+
+          // Call the function to display selected images, using the stored card index
+          displaySelectedImages(currentCardIndex);
+        }
+      }
+
+      function displaySelectedImages(cardIndex) {
+        console.log("Displaying images for card index:", cardIndex);
+        var selectedImagePreviewContainer = document.getElementById(
+          "selectedImagePreviewContainer_" + cardIndex
+        );
+        console.log(
+          "Selected Image Preview Container:",
+          selectedImagePreviewContainer
+        );
+
+        // Clear the existing content
+        selectedImagePreviewContainer.innerHTML = "";
+
+        // Check if there are selected files for the current card index
+        if (selectedFilesByCard[cardIndex]) {
+          var loadCounter = 0;
+
+          // Create a function to handle the asynchronous loading of images
+          function loadImage(index) {
+            var imageElement = document.createElement("img");
+            imageElement.alt = "Selected Image";
+            imageElement.className = "custom-circle-image";
+            imageElement.style.maxWidth = "60px";
+            imageElement.style.maxHeight = "60px";
+
+            // Load the image asynchronously
+            var reader = new FileReader();
+            reader.onload = function (event) {
+              imageElement.src = event.target.result;
+
+              // Append the image to the correct container
+              selectedImagePreviewContainer.appendChild(imageElement);
+
+              // Log the URL to the console
+              console.log("Image URL:", imageElement.src);
+
+              loadCounter++;
+
+              // Check if all images are loaded
+              if (loadCounter === selectedFilesByCard[cardIndex].length) {
+                // Show the selected images container once all images are loaded
+                selectedImagePreviewContainer.style.display = "block";
+                console.log("Image container displayed");
+
+                console.log("Image attached to card index:", cardIndex);
+
+                // Log the display style of the image container
+                console.log(
+                  "Before setting display style:",
+                  selectedImagePreviewContainer.style.display
+                );
+                selectedImagePreviewContainer.style.display = "block";
+                console.log(
+                  "After setting display style:",
+                  selectedImagePreviewContainer.style.display
+                );
+              } else {
+                // Load the next image
+                loadImage(index + 1);
+              }
+            };
+            reader.readAsDataURL(selectedFilesByCard[cardIndex][index]);
+          }
+
+          // Start loading images from index 0
+          loadImage(0);
+        }
+      }
+    </script>
+  </body>
+</html>
